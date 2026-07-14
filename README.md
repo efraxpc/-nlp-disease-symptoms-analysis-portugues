@@ -1,5 +1,7 @@
 # Processamento de Linguagem Natural — Análise de Textos Clínicos
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19m-4BkWEzmgjzVwnCkhaPDuHkMz8zW5w?usp=sharing)
+
 O trabalho implementa um **pipeline completo de PLN aplicado a texto clínico** (doenças e sintomas), percorrendo todas as etapas de um fluxo real de análise textual: desde o pré-processamento linguístico até a comunicação dos resultados. O objetivo é transformar descrições livres de sintomas em representações estruturadas que permitam **buscar, agrupar, classificar e extrair conhecimento** do domínio médico.
 
 Todo o desenvolvimento está no notebook único:
@@ -49,6 +51,8 @@ As dependências instaláveis via `pip` estão em [`requirements.txt`](./require
    python -m spacy download en_core_web_sm
    ```
 3. Abra e execute o notebook célula a célula (Jupyter, VS Code ou Colab).
+
+> ▶️ **Executar direto no Google Colab (sem instalar nada):** [abrir notebook no Colab](https://colab.research.google.com/drive/19m-4BkWEzmgjzVwnCkhaPDuHkMz8zW5w?usp=sharing).
 
 **Downloads automáticos durante a execução:** o próprio notebook cuida de baixar o dataset (Hugging Face), as *stopwords* do NLTK, os embeddings **GloVe** (via `gensim.downloader`) e o **BioWordVec** (`BioWordVec_PubMed_MIMICIII_d200.vec.bin`, a partir do NCBI). O BioWordVec é um arquivo grande — garanta conexão e espaço em disco suficientes.
 
